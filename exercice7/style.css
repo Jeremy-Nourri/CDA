@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+header {
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    height: 80%;
+    display: flex;
+}
+
+section {
+    background-color: red;
+    flex: 1;
+}
+
+article, aside, section {
+    padding: 10px;
+}
+
+article {
+    background-color: blue;
+    flex: 3;
+}
+
+aside {
+    background-color: yellow;
+    flex: 1;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    height: 5%;
+}
