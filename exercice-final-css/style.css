@@ -47,7 +47,7 @@ main {
     
         & article {
             width: 250px;
-            height: 300px;
+            min-height: 300px;
             border: solid 1px #226fa2;
             margin: 10px;
 
@@ -108,7 +108,4 @@ footer {
 
     }
 
-    article {
-        overflow: auto;
-    }
 }
