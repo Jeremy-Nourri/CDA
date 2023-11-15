@@ -108,7 +108,7 @@ footer {
 
     }
 
-    .overflow {
+    article {
         overflow: auto;
     }
 }
