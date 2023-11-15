@@ -6,23 +6,34 @@
 body {
     width: 100vw;
     height: 100vh;
+    display: grid;
+    grid-template-areas: 
+    'header' 
+    'main' 
+    'footer';
 }
 
 header {
-    height: 15%;
     display: flex;
     justify-content: center;
     align-items: center;
+    grid-area: header;
 }
 
-main {
+/* main {
     height: 80%;
     display: flex;
+} */
+
+main {
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
 }
 
 section {
     background-color: red;
-    flex: 1;
+    /* flex: 1; */
 }
 
 article, aside, section {
@@ -31,12 +42,12 @@ article, aside, section {
 
 article {
     background-color: blue;
-    flex: 3;
+    /* flex: 3; */
 }
 
 aside {
     background-color: yellow;
-    flex: 1;
+    /* flex: 1; */
 }
 
 footer {
@@ -45,5 +56,5 @@ footer {
     align-items: center;
     background-color: black;
     color: white;
-    height: 5%;
+    grid-area: footer;
 }
