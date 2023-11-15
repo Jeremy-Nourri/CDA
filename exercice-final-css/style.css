@@ -2,6 +2,8 @@
     margin: 0;
     padding: 0;
     list-style-type: none;
+    text-decoration: none;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 header {
@@ -9,7 +11,7 @@ header {
     height: 12vh;
     display: flex;
     justify-content: space-between;
-    background-color: #226fa2;;
+    background-color: #226fa2;
 
     & div {
         display: flex;
@@ -22,7 +24,7 @@ header {
             & li {
                 color: white;
                 display: inline-block;
-                padding: 5px;
+                padding: 7px;
                 margin: 0 5px;
                 background-color: orange;
                 border-radius: 10px;
@@ -33,6 +35,7 @@ header {
 
 main {
     padding: 15px;
+    background-color: white;
 
     & h2, h3 {
         margin: 15px 0;
@@ -48,8 +51,18 @@ main {
         & article {
             width: 250px;
             min-height: 300px;
-            border: solid 1px #226fa2;
-            margin: 10px;
+            border: solid 1px #d7d7d7a6;
+            box-shadow: 4px 4px #d7d7d7a6;
+            transition: all 0.8s;
+            border-radius: 20px;
+            margin: 17px;
+            padding: 15px;
+            cursor: pointer;
+            
+            & img {
+                width: 100%;
+                display: block;
+            }
 
             & div {
                 height: 50px;
@@ -58,11 +71,99 @@ main {
 
             & p:first-child {
                 text-align: center;
+                color: #226fa2;
+                font-weight: 600;
+                font-size: 2rem;
             }
 
-            & p {
-                padding: 7px;
+            & a {
+                display: block;
+                padding: 8px;
+                margin-top: 12px;
+                background-color: #226fa2;
+                opacity: 0.8;
+                transition: opacity 0.8s;
+                text-align: center;
+                border-radius: 15px;
+                color: white;
+                font-size: 0.8rem;
+                cursor: pointer;
+                
             }
+            & a:hover {
+                opacity: 1;
+            }
+
+        }
+        & article:hover {
+            box-shadow: 6px 6px #bbbaba;
+            border: solid 1px #bbbaba;
+        }
+    }
+}
+
+.article-page__main {
+    min-width: 80%;
+    padding: 5% 10%;
+    & h2 {
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    & h2, h3 {
+        margin-top: 25px;
+    }
+
+    & .main__container-top {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        & img {
+            display: block;
+            margin-right: 100px;
+        }
+
+        & a {
+            display: block;
+            padding: 8px;
+            margin-top: 20px;
+            background-color: #226fa2;
+            opacity: 0.8;
+            transition: opacity 0.8s;
+            text-align: center;
+            border-radius: 15px;
+            color: white;
+            font-size: 0.9rem;
+            cursor: pointer;
+        }
+        & a:hover {
+            opacity: 1;
+        }
+
+        & p {
+            margin-top: 20px;
+        }
+    }
+
+    & p {
+        text-align: justify;
+    }
+    & table {
+        width: 100%;
+        margin: 20px auto;
+        text-align: left;
+
+        & tr {
+            padding: 7px;
+        }
+        
+        & tr:first-child {
+            background-color: #226fa2;
+            color: white
+        }
+
+        & th, td {
+            padding: 10px;
         }
     }
 }
