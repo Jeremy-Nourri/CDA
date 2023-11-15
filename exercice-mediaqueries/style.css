@@ -59,4 +59,9 @@ footer {
     grid-area: footer;
 }
 
-@media 
+@media only screen and (max-width : 991px) {
+    main {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 2fr 1fr
+    }
+}
